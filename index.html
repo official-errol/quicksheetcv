@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/cv.png" />
+    <link rel="preload" href="./src/assets/a34f9d1faa5f3315-s.p.woff2" as="font" crossorigin="" type="font/woff2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>QuickSheet CV</title>
+    <meta name="title" content="QuickSheet CV – Create Resumes Fast & Free">
+    <meta name="description" content="Build a professional resume in minutes with our free, easy-to-use resume builder. Customize, preview, and download instantly.">
+
+    <meta name="keywords" content="resume builder, free resume builder, create resume online, professional resume, simple resume template, cv generator, job application, resume download, online cv maker">
+    <meta name="author" content="Errol Solomon">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style>
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #3f3f46; 
+        border-radius: 1.5rem; 
+        margin-top: 0.5rem;
+        padding-left: 1.0rem;
+      }
+  
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus,
+      input[type="date"]:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px #2b7fff; 
+        border-color: #2b7fff;
+      }
+      
+      input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 1px solid #3f3f46; 
+        border-radius: 0.5rem;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+        background-color: transparent;
+      }
+
+      input[type="checkbox"]:checked {
+        background-color: #2b7fff;
+        border-color: #2b7fff;
+      }
+
+      input[type="checkbox"]::after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 0.5rem;
+        top: 0.25rem;
+        width: 0.4rem;
+        height: 0.8rem;
+        border: solid #3f3f46;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+
+      input[type="checkbox"]:checked::after {
+        display: block;
+      }
+
+      input[type="checkbox"]:hover {
+        border-color: #a1a1aa;
+      }
+  
+      input[readonly] {
+        background-color: #f4f4f5;
+      }
+
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+      }
+      
+      input[type="date"].lime-icon::-webkit-calendar-picker-indicator {
+        filter: invert(70%) sepia(10%) saturate(2000%) hue-rotate(80deg) brightness(90%) contrast(80%);
+      }
+      
+      input::placeholder,
+      textarea::placeholder {
+        color: #a1a1aa;
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
