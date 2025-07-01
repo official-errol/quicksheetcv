@@ -245,6 +245,11 @@ const ResumePreview = ({ data }) => {
                 <div style={{ color: '#374151', fontSize: '14px', fontFamily: '"Times New Roman", Times, serif' }}>
                   {cert.organization} • {cert.date}
                 </div>
+                {cert.description && (
+                  <p style={{ marginTop: '4px', fontSize: '13px', color: '#4b5563', fontFamily: '"Times New Roman", Times, serif' }}>
+                    {cert.description}
+                  </p>
+                )}
               </div>
             ))}
           </div>
