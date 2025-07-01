@@ -51,6 +51,7 @@ export const initialData = {
         name: '',
         organization: '',
         date: '',
+        description: '',
       },
     ],
   }
