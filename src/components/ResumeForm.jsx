@@ -761,6 +761,16 @@ const ResumeForm = ({ data, onChange }) => {
                     placeholder='YYYY-MM-DD'
                   />
                 </div>
+                <div>
+                  <label>Description</label>
+                  <textarea
+                    name="description"
+                    value={cert.description}
+                    onChange={(e) => handleCertificateChange(cert.id, e)}
+                    placeholder="Brief description or achievement"
+                    className="w-full p-2 border rounded-md"
+                  />
+                </div>
               </div>
               <button onClick={() => removeCertificate(cert.id)}
               className='bg-red-500 p-3 rounded-3xl'>
